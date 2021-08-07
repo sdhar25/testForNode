@@ -1,0 +1,28 @@
+{{>header}}
+<h1>List{{detailis.length}}</h1>
+
+
+ <!-- <table>
+     {{#each detailis}}
+     <tr>
+         <td>{{this}}</td>
+     </tr>
+    {{/each}}
+ </table> -->
+ 
+ {{#each detailis}}
+  <div class="{{@key}}">
+  {{#each this}}
+    <div class="{{this}} module">
+        {{title}}
+        <img src="{{image_url}}">
+        id - {{imdb_id}}
+
+    </div>
+  {{/each}}
+  </div>
+{{/each}}
+
+
+ {{>footer}}
+

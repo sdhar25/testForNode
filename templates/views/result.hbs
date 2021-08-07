@@ -1,0 +1,18 @@
+{{>header}}
+
+
+ <h1>From result</h1>
+ <h2>{{latitude.length}}</h2>
+ <h3>{{name}}</h3>
+<table>
+{{#each latitude}}
+   
+   <tr>
+     <td><a href="/about">{{movieTitle}}</a></td>
+     <td><img alt="picture" src="{{moviePosterUrl}}"></td>
+   </tr>
+  
+{{/each}}
+</table>
+
+ {{>footer}}
